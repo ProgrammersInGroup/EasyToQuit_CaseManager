@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.easytoquit.easytoquit_casemanager">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".RetreiveData.GlobalVariable"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="個管師"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash.Splash"
+            android:theme="@style/notitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="個管師"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Information_Pdf.Information_Pdf1" />
+        <activity android:name=".Information_Pdf.Information_Pdf2" />
+        <activity android:name=".Information_Pdf.Information_Pdf3" />
+        <activity android:name=".Information_Pdf.Information_Pdf4" />
+        <activity android:name=".Tips_Pdf.Tips_Pdf1" />
+        <activity android:name=".Tips_Pdf.Tips_Pdf2" />
+        <activity android:name=".Tips_Pdf.Tips_Pdf3" />
+        <activity android:name=".Tips_Pdf.Tips_Pdf4" />
+        <activity android:name=".Tips_Pdf.Tips_Pdf5" />
+        <activity android:name=".Insertion.InsertProfile" />
+        <activity android:name=".QRCode_Scanner" />
+        <activity android:name=".Meeting.MeetingAll" />
+        <activity android:name=".Meeting.MeetingFirst" />
+        <activity android:name=".Meeting.MeetingSecond" />
+        <activity android:name=".UserInformation.UserInformation" />
+        <activity android:name=".UserInformation.UserInformationProfile" />
+        <activity android:name=".UserInformation.UserInformationAssessment" />
+        <activity android:name=".UserInformation.UserInformationMeeting" />
+        <activity android:name=".Insertion.InsertAssessment" />
+        <activity android:name=".UserInformation.UserInformationMeetingList.UserInformationMeetingAll" />
+        <activity android:name=".UserInformation.UserInformationMeetingList.UserInformationMeetingFirst" />
+        <activity android:name=".UserInformation.UserInformationMeetingList.UserInformationMeetingSecond" />
+        <activity android:name=".Meeting.MeetingList"></activity>
+    </application>
+
+</manifest>

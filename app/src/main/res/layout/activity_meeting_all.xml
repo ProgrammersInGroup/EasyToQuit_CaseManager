@@ -1,0 +1,1371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.easytoquit.easytoquit_casemanager.Meeting.MeetingAll">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="個案基本資料"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10sp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="1. 姓名："
+                        android:layout_weight="1"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="ex：王小明"
+                        android:layout_weight="3"
+                        android:id="@+id/edt_name"/>
+                </LinearLayout> <!-- 1. EditText -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="2. 身份證字號："
+                        android:layout_weight="1"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="ex：A123456789"
+                        android:layout_weight="3"
+                        android:id="@+id/edt_id"/>
+                </LinearLayout> <!-- 2. EditText -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="3. 出生日期："
+                        android:layout_weight="1"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="ex：2018/01/01"
+                        android:layout_weight="3"
+                        android:id="@+id/edt_birthday"/>
+                </LinearLayout> <!-- 3. EditText -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="4. 年齡："
+                        android:layout_weight="1"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="ex：20"
+                        android:layout_weight="3"
+                        android:id="@+id/edt_age"/>
+                </LinearLayout> <!-- 4. EditText -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="5. 個案來源："
+                        />
+                </LinearLayout> <!-- 5. Radio Button TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/resource"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtn_outpatient"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="門診"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="住院"
+                                android:id="@+id/rbtn_inpatient"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="急診"
+                                android:id="@+id/rbtn_emergency"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="社區藥局"
+                                android:id="@+id/rbtn_society"
+                                android:textSize="25sp"/>
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout> <!-- 5. Radio Button Group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="6. 性別："
+                        />
+                </LinearLayout> <!-- 6. Radio Button TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtn_male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="男"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="女"
+                                android:id="@+id/rbtn_female"
+                                android:textSize="25sp"/>
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout> <!-- 6. Radio Button Group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="7. 婚姻狀況："
+                        />
+                </LinearLayout> <!-- 7. Radio Button TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtn_single"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="未婚"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="已婚"
+                                android:id="@+id/rbtn_marriage"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="其他"
+                                android:id="@+id/rbtn_marriage_others"
+                                android:textSize="25sp"/>
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout> <!-- 7. Radio Button Group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="8. 懷孕："
+                        />
+                </LinearLayout> <!-- 8. Radio Button TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtn_pregnant_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="是"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="否"
+                                android:id="@+id/rbtn_pregnant_no"
+                                android:textSize="25sp"/>
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout> <!-- 8. Radio Button Group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="9. 住址："
+                        />
+                </LinearLayout> <!-- 9. TextView -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:id="@+id/edt_address"/>
+                </LinearLayout> <!-- 9. EditText -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="10. 教育程度："
+                        />
+                </LinearLayout> <!-- 10. Radio Button TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtn_elementary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="小學(含)以下"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="國(初)中"
+                                android:id="@+id/rbtn_junior"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="高中(職)"
+                                android:id="@+id/rbtn_senior"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="專科"
+                                android:id="@+id/rbtn_college"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="大學"
+                                android:id="@+id/rbtn_university"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="研究所(含)以上"
+                                android:id="@+id/rbtn_graduate"
+                                android:textSize="25sp"/>
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout> <!-- 10. Radio Button Group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="11. 身高："
+                        android:layout_weight="1"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="ex：160"
+                        android:layout_weight="2"
+                        android:id="@+id/edt_height"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="公分"
+                        android:layout_weight="1"/>
+                </LinearLayout> <!-- 11. EditText -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="12. 體重："
+                        android:layout_weight="1"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="ex：60"
+                        android:layout_weight="2"
+                        android:id="@+id/edt_weight"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="公斤"
+                        android:layout_weight="1"/>
+                </LinearLayout> <!-- 12. EditText -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="13. 血壓："
+                        android:layout_weight="1"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="ex：160"
+                        android:layout_weight="2"
+                        android:id="@+id/edt_pressure"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="mmHg"
+                        android:layout_weight="1"/>
+                </LinearLayout> <!-- 13. EditText -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="14. 電話："
+                        android:layout_weight="1"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="ex：02-11111111"
+                        android:layout_weight="3"
+                        android:id="@+id/edt_phone"/>
+                </LinearLayout> <!-- 14. EditText -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="15. 手機："
+                        android:layout_weight="1"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="ex：0912345678"
+                        android:layout_weight="3"
+                        android:id="@+id/edt_cellphone"/>
+                </LinearLayout> <!-- 15. EditText -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="16. Email："
+                        android:layout_weight="1"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="ex：aaa@gmail.com"
+                        android:layout_weight="3"
+                        android:id="@+id/edt_email"/>
+                </LinearLayout> <!-- 16. EditText -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="17. 目前是否有喝酒？："
+                        />
+                </LinearLayout> <!-- 17. Radio Button TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtn_drink_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="是"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="否"
+                                android:id="@+id/rbtn_drink_no"
+                                android:textSize="25sp"/>
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout> <!-- 17. Radio Button Group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="18. 目前是否有嚼食檳榔？："
+                        />
+                </LinearLayout> <!-- 18. Radio Button TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtn_eat_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="是"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="否"
+                                android:id="@+id/rbtn_eat_no"
+                                android:textSize="25sp"/>
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout> <!-- 18. Radio Button Group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="19. 菸齡："
+                        android:layout_weight="1"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="ex:1"
+                        android:layout_weight="2"
+                        android:id="@+id/edt_smoking_year"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="年"
+                        android:layout_weight="1"/>
+                </LinearLayout> <!-- 19. EditText -->
+            </LinearLayout><!-- 個案基本資料 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="尼古丁成癮度"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10sp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="1. 起床後多久抽第一支菸？："
+                        />
+                </LinearLayout> <!-- 1. Radio Button TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtn_one_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5分鐘以內（3分）"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5-30分鐘（2分）"
+                                android:id="@+id/rbtn_one_2"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="31-60分鐘以內（1分）"
+                                android:id="@+id/rbtn_one_3"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="60分鐘以上（0分）"
+                                android:id="@+id/rbtn_one_4"
+                                android:textSize="25sp"/>
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout> <!-- 1. Radio Button Group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="2. 在禁菸場所不能吸菸會讓你難忍受嗎？："
+                        />
+                </LinearLayout> <!-- 2. Radio Button TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtn_two_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="是（1分）"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="否（0分）"
+                                android:id="@+id/rbtn_two_2"
+                                android:textSize="25sp"/>
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout> <!-- 2. Radio Button Group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="3. 哪根菸是你最難放棄的？："
+                        />
+                </LinearLayout> <!-- 3. Radio Button TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtn_three_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="早上第一支菸（1分）"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="其他（0分）"
+                                android:id="@+id/rbtn_three_2"
+                                android:textSize="25sp"/>
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout> <!-- 3. Radio Button Group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="4. 您一天最多抽幾支菸？："
+                        />
+                </LinearLayout> <!-- 4. Radio Button TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtn_four_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="31支以上（3分）"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21-30分（2分）"
+                                android:id="@+id/rbtn_four_2"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="11-20支以上（1分）"
+                                android:id="@+id/rbtn_four_3"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10支或更少（0分）"
+                                android:id="@+id/rbtn_four_4"
+                                android:textSize="25sp"/>
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout> <!-- 4. Radio Button Group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="5. 起床後幾小時內是您一天中抽最多支菸的時候嗎？："
+                        />
+                </LinearLayout> <!-- 5. Radio Button TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtn_five_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="是（1分）"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="否（0分）"
+                                android:id="@+id/rbtn_five_2"
+                                android:textSize="25sp"/>
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout> <!-- 5. Radio Button Group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="6. 當您嚴重生病時，幾乎整天臥病在床時還抽菸嗎？："
+                        />
+                </LinearLayout> <!-- 6. Radio Button TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtn_six_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="是（1分）"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="否（0分）"
+                                android:id="@+id/rbtn_six_2"
+                                android:textSize="25sp"/>
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout> <!-- 6. Radio Button Group-->
+            </LinearLayout><!-- 尼古丁依賴評估 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="過去戒菸經驗"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10sp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="1. 過去一年內，有幾次戒菸超過24小時？："
+                        />
+                </LinearLayout> <!-- 1. Radio Button TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtn_2_one_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="沒有"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="有"
+                                android:id="@+id/rbtn_2_one_2"
+                                android:textSize="25sp"/>
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout> <!-- 1. Radio Button Group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="2. 戒菸的原因？："
+                        />
+                </LinearLayout> <!-- 2. Radio Button TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtn_for_health"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="為了健康"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="為了經濟"
+                                android:id="@+id/rbtn_for_finance"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:id="@+id/rbtn_for_family"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="為了家庭"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="其他"
+                                android:id="@+id/rbtn_for_others"
+                                android:textSize="25sp"/>
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout> <!-- 2. Radio Button Group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="3. 戒菸的方法？："
+                        />
+                </LinearLayout> <!-- 3. Radio Button TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtn_3_three_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="門診戒菸"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="戒菸班"
+                                android:id="@+id/rbtn_3_three_2"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:id="@+id/rbtn_3_three_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="戒菸專線"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="戒菸競賽"
+                                android:id="@+id/rbtn_3_three_4"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:id="@+id/rbtn_3_three_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="靠自己意志力"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="其他"
+                                android:id="@+id/rbtn_3_three_6"
+                                android:textSize="25sp"/>
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout> <!-- 3. Radio Button Group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="4. 戒菸維持期？："
+                        />
+                </LinearLayout> <!-- 4. Radio Button TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtn_3_four_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="未滿1個月"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1個月以上未滿3個月"
+                                android:id="@+id/rbtn_3_four_2"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3個月以上未滿6個月"
+                                android:id="@+id/rbtn_3_four_3"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="6 個月以上未滿1年"
+                                android:id="@+id/rbtn_3_four_4"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1年以上"
+                                android:id="@+id/rbtn_3_four_5"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="其他"
+                                android:id="@+id/rbtn_f3_our_6"
+                                android:textSize="25sp"/>
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout> <!-- 4. Radio Button Group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="5. 遭遇的困難？："
+                        />
+                </LinearLayout> <!-- 5. Radio Button TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtn_3-five_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="戒斷症狀"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="害怕失敗"
+                                android:id="@+id/rbtn_3_five_2"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:id="@+id/rbtn_3_five_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="體重增加"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="缺乏支持"
+                                android:id="@+id/rbtn_3_five_4"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:id="@+id/rbtn_3_five_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="情緒低落、憂鬱"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="很享受吸菸的感覺"
+                                android:id="@+id/rbtn_3_five_6"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:id="@+id/rbtn_3_five_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="周圍有吸菸者"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="不清楚有哪些戒菸服務可以選擇"
+                                android:id="@+id/rbtn_3_five_8"
+                                android:textSize="25sp"/>
+                            <RadioButton
+                                android:id="@+id/rbtn_3_five_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="其他"
+                                android:textSize="25sp"/>
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout> <!-- 5. Radio Button Group-->
+            </LinearLayout><!-- 過去戒菸經驗 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="目前是否有合併疾病"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10sp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        />
+                </LinearLayout> <!-- 1. Radio Button TextView-->
+            </LinearLayout><!-- 目前是否合併疾病 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="目前是否服用戒菸藥品"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10sp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        />
+                </LinearLayout> <!-- 1. Radio Button TextView-->
+            </LinearLayout><!-- 目前是否服用戒菸藥品 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="確認"
+                    android:id="@+id/sure"
+                    android:background="@drawable/btnstyle"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

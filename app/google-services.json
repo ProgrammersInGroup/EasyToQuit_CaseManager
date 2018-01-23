@@ -1,0 +1,415 @@
+{
+  "project_info": {
+    "project_number": "155337170025",
+    "firebase_url": "https://retrievedata-d4c18.firebaseio.com",
+    "project_id": "retrievedata-d4c18",
+    "storage_bucket": "retrievedata-d4c18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155337170025:android:15e47bd5c8a13056",
+        "android_client_info": {
+          "package_name": "com.easytoquit.retrievedata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155337170025-sinkcc5ul21lrfjbj5vkoa1mi1kpt1h6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easytoquit.retrievedata",
+            "certificate_hash": "77dc8d10805afeecc05c7774e77404eb0b0ca6e9"
+          }
+        },
+        {
+          "client_id": "155337170025-qmeguvh9ht8rinbmtenvua0sakc2bp4m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easytoquit.retrievedata",
+            "certificate_hash": "b668a4df5ff3e41d5fc51a0ddc5dd00768913abf"
+          }
+        },
+        {
+          "client_id": "155337170025-lkn5th03lgufvp8722uhb4po6kemo222.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXkhazUgt0NVgf3ZNZuJfW5LB025DamTg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155337170025-lkn5th03lgufvp8722uhb4po6kemo222.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155337170025:android:5cd04ceb94b0d712",
+        "android_client_info": {
+          "package_name": "com.example.chenyunjing.profiletext1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155337170025-sgsvebhpnakqkk3ssp28ttfsgvta17uu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chenyunjing.profiletext1",
+            "certificate_hash": "77dc8d10805afeecc05c7774e77404eb0b0ca6e9"
+          }
+        },
+        {
+          "client_id": "155337170025-lkn5th03lgufvp8722uhb4po6kemo222.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXkhazUgt0NVgf3ZNZuJfW5LB025DamTg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155337170025-lkn5th03lgufvp8722uhb4po6kemo222.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155337170025:android:bbc9774d6783f187",
+        "android_client_info": {
+          "package_name": "com.example.chenyunjing.dickoqpwoe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155337170025-n9c5h5co1omf0mh648lce31d8bld2l2a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chenyunjing.dickoqpwoe",
+            "certificate_hash": "77dc8d10805afeecc05c7774e77404eb0b0ca6e9"
+          }
+        },
+        {
+          "client_id": "155337170025-lkn5th03lgufvp8722uhb4po6kemo222.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXkhazUgt0NVgf3ZNZuJfW5LB025DamTg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155337170025-lkn5th03lgufvp8722uhb4po6kemo222.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155337170025:android:72e1ea1e603a0663",
+        "android_client_info": {
+          "package_name": "com.easytoquit.polaris0712"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155337170025-hndm2pasi6el8eqta9vj75vc1f6smicb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easytoquit.polaris0712",
+            "certificate_hash": "b668a4df5ff3e41d5fc51a0ddc5dd00768913abf"
+          }
+        },
+        {
+          "client_id": "155337170025-lkn5th03lgufvp8722uhb4po6kemo222.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXkhazUgt0NVgf3ZNZuJfW5LB025DamTg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155337170025-lkn5th03lgufvp8722uhb4po6kemo222.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155337170025:android:435da711fc2344b7",
+        "android_client_info": {
+          "package_name": "com.easytoquit.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155337170025-m02pglk4su0roduk0vmvhpj9jo3nq8v2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easytoquit.project",
+            "certificate_hash": "b668a4df5ff3e41d5fc51a0ddc5dd00768913abf"
+          }
+        },
+        {
+          "client_id": "155337170025-lkn5th03lgufvp8722uhb4po6kemo222.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXkhazUgt0NVgf3ZNZuJfW5LB025DamTg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155337170025-lkn5th03lgufvp8722uhb4po6kemo222.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155337170025:android:3707112b6f5eb268",
+        "android_client_info": {
+          "package_name": "com.easytoquit.project_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155337170025-u3c9u91s2mugafv1e1064oqpoo06jr18.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easytoquit.project_admin",
+            "certificate_hash": "b668a4df5ff3e41d5fc51a0ddc5dd00768913abf"
+          }
+        },
+        {
+          "client_id": "155337170025-lkn5th03lgufvp8722uhb4po6kemo222.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXkhazUgt0NVgf3ZNZuJfW5LB025DamTg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155337170025-lkn5th03lgufvp8722uhb4po6kemo222.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155337170025:android:46610cfcb252c52f",
+        "android_client_info": {
+          "package_name": "com.example.chenyunjing.history"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155337170025-usths3lad3jrqo1cqtlsjvdrf37m8q8d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chenyunjing.history",
+            "certificate_hash": "77dc8d10805afeecc05c7774e77404eb0b0ca6e9"
+          }
+        },
+        {
+          "client_id": "155337170025-lkn5th03lgufvp8722uhb4po6kemo222.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXkhazUgt0NVgf3ZNZuJfW5LB025DamTg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155337170025-lkn5th03lgufvp8722uhb4po6kemo222.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155337170025:android:06a64336c7c37cf4",
+        "android_client_info": {
+          "package_name": "com.easytoquit.easytoquit_user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155337170025-5l9blthiraqgiov4khq8u5t1m39f0eh9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easytoquit.easytoquit_user",
+            "certificate_hash": "b668a4df5ff3e41d5fc51a0ddc5dd00768913abf"
+          }
+        },
+        {
+          "client_id": "155337170025-lkn5th03lgufvp8722uhb4po6kemo222.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXkhazUgt0NVgf3ZNZuJfW5LB025DamTg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155337170025-lkn5th03lgufvp8722uhb4po6kemo222.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155337170025:android:eae82a398409f151",
+        "android_client_info": {
+          "package_name": "com.easytoquit.easytoquit_casemanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155337170025-99ilmduvn3q3rqlbt9sklojdqstb4grb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easytoquit.easytoquit_casemanager",
+            "certificate_hash": "b668a4df5ff3e41d5fc51a0ddc5dd00768913abf"
+          }
+        },
+        {
+          "client_id": "155337170025-lkn5th03lgufvp8722uhb4po6kemo222.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXkhazUgt0NVgf3ZNZuJfW5LB025DamTg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155337170025-lkn5th03lgufvp8722uhb4po6kemo222.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

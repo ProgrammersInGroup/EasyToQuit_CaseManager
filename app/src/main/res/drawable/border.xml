@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android= "http://schemas.android.com/apk/res/android"
+
+    android:shape="rectangle">
+
+    <!--邊界長寬-->
+    <stroke
+        android:width="2dp"
+        android:color="@color/colorPrimary"/>
+
+    <!--圓角-->
+    <corners
+        android:radius="1dp"/>
+
+    <!--內距-->
+    <padding
+
+        android:left="15dp"
+        android:top="10dp"
+        android:right="15dp"
+        android:bottom="10dp"/>
+
+</shape>

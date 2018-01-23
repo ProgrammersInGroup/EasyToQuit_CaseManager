@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <!--<item
+            android:id="@+id/nav_status"
+            android:icon="@drawable/status"
+            android:title="目前狀態" />-->
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="個人檔案" />
+        <!--<item
+            android:id="@+id/nav_assessment"
+            android:icon="@drawable/assessment"
+            android:title="評估自我" />-->
+        <item
+            android:id="@+id/nav_health_stop"
+            android:icon="@drawable/health_stop"
+            android:title="健康小站" />
+        <!--<item
+            android:id="@+id/nav_meeting"
+            android:icon="@drawable/meeting"
+            android:title="訪談紀錄" />-->
+        <item
+            android:id="@+id/nav_information"
+            android:icon="@drawable/information"
+            android:title="衛教資訊" />
+        <item
+            android:id="@+id/nav_tips"
+            android:icon="@drawable/tips"
+            android:title="戒菸撇步" />
+        <!--<item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/history"
+            android:title="歷史資料" />-->
+        <!-- <item
+             android:id="@+id/nav_others"
+             android:icon="@drawable/others"
+             android:title="其他資訊" />-->
+    </group>
+
+
+</menu>

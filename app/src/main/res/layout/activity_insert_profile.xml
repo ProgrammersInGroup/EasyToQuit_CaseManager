@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.easytoquit.easytoquit_casemanager.Insertion.InsertProfile">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="125sp"
+            android:layout_height="125sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40sp"
+            android:src="@color/gray" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/add"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_above="@+id/name"
+            android:layout_alignEnd="@+id/profile_image"
+            android:src="@drawable/add"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:width="250sp"
+            android:hint="姓名"
+            android:textAlignment="center"
+            android:textColor="#204d79"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/name"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="20sp"
+            android:width="250sp"
+            android:hint="性別"
+            android:textAlignment="center"
+            android:textColor="#204d79"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/gender"
+            android:layout_below="@+id/gender"
+            android:layout_marginTop="20sp"
+            android:width="250sp"
+            android:hint="年齡"
+            android:textAlignment="center"
+            android:textColor="#204d79"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/age"
+            android:layout_below="@+id/age"
+            android:layout_marginTop="20sp"
+            android:width="250sp"
+            android:hint="電話號碼"
+            android:textAlignment="center"
+            android:textColor="#204d79"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/phone">
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="13sp"
+                android:text="確認"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@drawable/btnstyle"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_margin="10sp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="10dp">
+
+                <TextView
+                    android:id="@+id/txt_smoking_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="菸齡"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/show_smoking_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90sp"
+                    android:text="20"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/unit_smoking_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110sp"
+                    android:text="年"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout> <!-- 菸齡 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_margin="10sp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="10dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_week_smoking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="這一週內平均每天吸"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/show_week_smoking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="20"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/unit_week_smoking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+
+                    android:text="支"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"/>
+            </LinearLayout> <!-- 一週吸菸量 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_margin="10sp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="10dp">
+
+                <TextView
+                    android:id="@+id/txt_date_smoking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="這一天內平均每天吸"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/show_date_smoking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="20"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/unit_date_smoking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+
+                    android:text="支"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout> <!-- 一天吸菸量 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_margin="10sp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="10dp">
+
+                <TextView
+                    android:id="@+id/txt_quit_smoking_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="戒菸日"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/show_quit_smoking_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80sp"
+                    android:text="2018/01/01"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout> <!-- 戒菸日 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_margin="10sp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="10dp">
+
+                <TextView
+                    android:id="@+id/txt_smoking_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="目前已省金額"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/show_smoking_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45sp"
+                    android:text="20"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/unit_smoking_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
+
+                    android:text="元"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"/>
+            </LinearLayout> <!-- 目前已省金額 -->
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>
