@@ -42,21 +42,20 @@ public class MeetingAll extends AppCompatActivity {
     RadioButton rbtn_society;//社區藥局
     String srbtn_society="";
 
-    /*RadioGroup gender;
+    RadioGroup gender;
     RadioButton rbtn_male;//男生
-    String srbtn_male="";
+    String srbtn_gecder="";
     RadioButton rbtn_female;//女生
     String srbtn_female="";
 
     RadioGroup marry;
     RadioButton rbtn_single;//未婚
-    String srbtn_single="";
     RadioButton rbtn_marriage;//已婚
-    String srbtn_marriage="";
+    String srbtn_marrige="";
     RadioButton rbtn_marriage_others;//其他
-    String srbtn_marriage_others="";
 
-    RadioGroup pregnant;
+
+    /*RadioGroup pregnant;
     RadioButton rbtn_pregnant_yes;//是
     String srbtn_pregnant_yes="";
     RadioButton rbtn_pregnant_no;//否
@@ -234,7 +233,8 @@ public class MeetingAll extends AppCompatActivity {
         rbtn_emergency=(RadioButton)findViewById(R.id.rbtn_emergency);
         rbtn_society=(RadioButton)findViewById(R.id.rbtn_society);
 
-       /* gender=(RadioGroup)findViewById(R.id.gender);
+
+        gender=(RadioGroup)findViewById(R.id.gender);
         rbtn_male=(RadioButton)findViewById(R.id.rbtn_male);
         rbtn_female=(RadioButton)findViewById(R.id.rbtn_female);
 
@@ -243,7 +243,7 @@ public class MeetingAll extends AppCompatActivity {
         rbtn_marriage=(RadioButton)findViewById(R.id.rbtn_marriage);
         rbtn_marriage_others=(RadioButton)findViewById(R.id.rbtn_marriage_others);
 
-        pregnant=(RadioGroup)findViewById(R.id.pregnant);
+        /*pregnant=(RadioGroup)findViewById(R.id.pregnant);
         rbtn_pregnant_yes=(RadioButton)findViewById(R.id.rbtn_pregnant_yes);
         rbtn_pregnant_no=(RadioButton)findViewById(R.id.rbtn_pregnant_no);
 
@@ -348,7 +348,7 @@ public class MeetingAll extends AppCompatActivity {
     private View.OnClickListener onclick = new View.OnClickListener() {
 
         public void onClick(View v) {
-            FirebaseDatabase database = FirebaseDatabase.getInstance("https://retrievedata-d4c18.firebaseio.com/");
+            FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
             DatabaseReference myRef = database.getReference();
             FileInputStream fis = null;
             StringBuilder sb = new StringBuilder();
@@ -372,15 +372,37 @@ public class MeetingAll extends AppCompatActivity {
                     srbtn_outpatient=rbtn_outpatient.getText().toString();
                     break;
                 case R.id.rbtn_inpatient:
-                    srbtn_inpatient=rbtn_inpatient.getText().toString(); //顯示結果
+                    srbtn_outpatient=rbtn_inpatient.getText().toString(); //顯示結果
                     break;
                 case R.id.rbtn_emergency:
-                    srbtn_emergency=rbtn_emergency.getText().toString(); //顯示結果
+                    srbtn_outpatient=rbtn_emergency.getText().toString(); //顯示結果
                     break;
                 case R.id.rbtn_society:
-                    srbtn_society=rbtn_society.getText().toString(); //顯示結果
+                    srbtn_outpatient=rbtn_society.getText().toString(); //顯示結果
                     break;
             }
+
+            switch(gender.getCheckedRadioButtonId()){
+                case R.id.rbtn_male:
+                    srbtn_gecder=rbtn_male.getText().toString();
+                    break;
+                case R.id.rbtn_female:
+                    srbtn_gecder=rbtn_female.getText().toString(); //顯示結果
+                    break;
+            }
+
+            switch(marry.getCheckedRadioButtonId()){
+                case R.id.rbtn_marriage:
+                    srbtn_gecder=rbtn_male.getText().toString();
+                    break;
+                case R.id.rbtn_single:
+                    srbtn_gecder=rbtn_female.getText().toString(); //顯示結果
+                    break;
+                case R.id.rbtn_marriage_others:
+                    srbtn_gecder=rbtn_female.getText().toString(); //顯示結果
+                    break;
+            }
+
             sedt_name =edt_name.getText().toString();
             sedt_id=edt_id.getText().toString();
             sedt_birthday=edt_birthday.getText().toString();
@@ -389,8 +411,8 @@ public class MeetingAll extends AppCompatActivity {
 
             //加入防呆功能 所有edittext不可為空
             MeetingAllUser meetingAlluser = new MeetingAllUser(
-                    sedt_name, sedt_id, sedt_birthday, sedt_age, srbtn_outpatient, srbtn_inpatient,
-                    srbtn_emergency, srbtn_society/*, srbtn_male, srbtn_female, srbtn_single, srbtn_marriage,
+                    sedt_name, sedt_id, sedt_birthday, sedt_age, srbtn_outpatient,srbtn_gecder,srbtn_marrige/*, srbtn_inpatient,
+                    srbtn_emergency, srbtn_society, srbtn_male, srbtn_female, srbtn_single, srbtn_marriage,
                     srbtn_marriage_others, srbtn_pregnant_yes, srbtn_pregnant_no, sedt_address,
                     srbtn_elementary, srbtn_junior, srbtn_senior, srbtn_college, srbtn_university,
                     srbtn_graduate, sedt_height, sedt_weight, sedt_pressure, sedt_phone, sedt_cellphone,
@@ -402,6 +424,20 @@ public class MeetingAll extends AppCompatActivity {
                     srbtn_3_four_1, srbtn_3_four_2, srbtn_3_four_3, srbtn_3_four_4, srbtn_3_four_5, srbtn_3_four_6, srbtn_3_five_1,
                     srbtn_3_five_2, srbtn_3_five_3, srbtn_3_five_4, srbtn_3_five_5, srbtn_3_five_6, srbtn_3_five_7, srbtn_3_five_8, srbtn_3_five_9,
                     sdiveser, smedicine*/);
+
+            /*, srbtn_inpatient,
+                    srbtn_emergency, srbtn_society, srbtn_male, srbtn_female, srbtn_single, srbtn_marriage,
+                    srbtn_marriage_others, srbtn_pregnant_yes, srbtn_pregnant_no, sedt_address,
+                    srbtn_elementary, srbtn_junior, srbtn_senior, srbtn_college, srbtn_university,
+                    srbtn_graduate, sedt_height, sedt_weight, sedt_pressure, sedt_phone, sedt_cellphone,
+                    sedt_email, srbtn_drink_yes, srbtn_drink_no, srbtn_eat_yes, srbtn_eat_no, sedt_smoking_year,
+                    srbtn_one_1, srbtn_one_2, srbtn_one_3, srbtn_one_4, srbtn_two_1, srbtn_two_2, srbtn_three_1,
+                    srbtn_three_2, srbtn_four_1, srbtn_four_2, srbtn_four_3, srbtn_four_4, srbtn_five_1,
+                    srbtn_five_2, srbtn_six_1, srbtn_six_2, srbtn_2_one_1, srbtn_2_one_2, srbtn_for_health, srbtn_for_finance,
+                    srbtn_for_family, srbtn_for_others, srbtn_3_three_1, srbtn_3_three_2, srbtn_3_three_3, srbtn_3_three_4, srbtn_3_three_5, srbtn_3_three_6,
+                    srbtn_3_four_1, srbtn_3_four_2, srbtn_3_four_3, srbtn_3_four_4, srbtn_3_four_5, srbtn_3_four_6, srbtn_3_five_1,
+                    srbtn_3_five_2, srbtn_3_five_3, srbtn_3_five_4, srbtn_3_five_5, srbtn_3_five_6, srbtn_3_five_7, srbtn_3_five_8, srbtn_3_five_9,
+                    sdiveser, smedicine*/
 
             GlobalVariable gv = (GlobalVariable)getApplicationContext();
             String userPhone = gv.getPhone();

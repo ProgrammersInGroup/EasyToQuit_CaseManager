@@ -16,7 +16,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class UserInformationMeetingAll extends AppCompatActivity {
 
-    TextView name, id, birth, age, case1;
+    TextView name, id, birth, age, case1,casegender;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,13 +29,14 @@ public class UserInformationMeetingAll extends AppCompatActivity {
         birth = (TextView)findViewById(R.id.txt_birth);
         age = (TextView)findViewById(R.id.txt_age);
         case1 = (TextView)findViewById(R.id.txt_case);
+        casegender=(TextView)findViewById(R.id.txt_case1);
 
 
         GlobalVariable gv = (GlobalVariable)getApplicationContext();
         String userPhone = gv.getPhone();
 
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
         DatabaseReference myRef = database.getReference("users/" + userPhone + "/訪談紀錄/總表/");
 
         myRef.addValueEventListener(new ValueEventListener() {
@@ -49,24 +50,15 @@ public class UserInformationMeetingAll extends AppCompatActivity {
                 birth.setText(value.getedt_birthday());
                 age.setText(value.getedt_age());
 
-                String caseResult = null;
-
-                if (value.getrbtn_outpatient() != null){
-                    caseResult = value.getrbtn_outpatient();
-                }
-                else if (value.getrbtn_inpatient() != null){
-                    caseResult = value.getrbtn_inpatient();
-                }
-                else if (value.getrbtn_emergency() != null){
-                    caseResult = value.getrbtn_emergency();
-                }
-                else if (value.getrbtn_society() != null){
-                    caseResult = value.getrbtn_society();
-                }
-
-                case1.setText(caseResult);
+                case1.setText(value.getrbtn_outpatient());
                 Log.d("aa", "Value is: " + value.getrbtn_outpatient());
+                /*Log.d("aa", "Value is: " + value.getrbtn_inpatient());*/
+
+                casegender.setText(value.getRbtn_gender());
+
             }
+
+
 
             @Override
             public void onCancelled(DatabaseError error) {

@@ -45,7 +45,7 @@ public class UserInformationProfile extends AppCompatActivity {
 
         Log.d("aa", "get: " + userPhone);
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
         DatabaseReference myRef = database.getReference("users/" + userPhone);
 
 

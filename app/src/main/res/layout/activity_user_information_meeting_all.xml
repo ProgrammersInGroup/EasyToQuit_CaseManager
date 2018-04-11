@@ -131,7 +131,7 @@
                         android:id="@+id/txt_case"
                         />
                 </LinearLayout> <!-- 5. Radio Button TextView-->
-                <!--<LinearLayout
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10sp"
@@ -147,9 +147,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="男"
+                        android:id="@+id/txt_case1"
                         android:textSize="25sp"
                         />
-                </LinearLayout> &lt;!&ndash; 6. Radio Button TextView&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 6. Radio Button TextView&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -168,7 +169,7 @@
                         android:text="未婚"
                         android:textSize="25sp"
                         />
-                </LinearLayout> &lt;!&ndash; 7. Radio Button TextView&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 7. Radio Button TextView&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -187,7 +188,7 @@
                         android:text="是"
                         android:textSize="25sp"
                         />
-                </LinearLayout> &lt;!&ndash; 8. Radio Button TextView&ndash;&gt;
+                </LinearLayout><!-- &lt;!&ndash; 8. Radio Button TextView&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -200,7 +201,7 @@
                         android:textSize="25sp"
                         android:text="9. 住址："
                         />
-                </LinearLayout> &lt;!&ndash; 9. TextView &ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 9. TextView &ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -212,7 +213,7 @@
                         android:layout_height="wrap_content"
 
                         android:id="@+id/edt_address"/>
-                </LinearLayout> &lt;!&ndash; 9. EditText &ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 9. EditText &ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -225,7 +226,7 @@
                         android:textSize="25sp"
                         android:text="10. 教育程度："
                         />
-                </LinearLayout> &lt;!&ndash; 10. Radio Button TextView&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 10. Radio Button TextView&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -281,7 +282,7 @@
                                 android:textSize="25sp"/>
                         </RadioGroup>
                     </HorizontalScrollView>
-                </LinearLayout> &lt;!&ndash; 10. Radio Button Group&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 10. Radio Button Group&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -306,7 +307,7 @@
                         android:textSize="25sp"
                         android:text="公分"
                         android:layout_weight="1"/>
-                </LinearLayout> &lt;!&ndash; 11. EditText &ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 11. EditText &ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -331,7 +332,7 @@
                         android:textSize="25sp"
                         android:text="公斤"
                         android:layout_weight="1"/>
-                </LinearLayout> &lt;!&ndash; 12. EditText &ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 12. EditText &ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -356,7 +357,7 @@
                         android:textSize="25sp"
                         android:text="mmHg"
                         android:layout_weight="1"/>
-                </LinearLayout> &lt;!&ndash; 13. EditText &ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 13. EditText &ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -375,7 +376,7 @@
                         android:hint="ex：02-11111111"
                         android:layout_weight="3"
                         android:id="@+id/edt_phone"/>
-                </LinearLayout> &lt;!&ndash; 14. EditText &ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 14. EditText &ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -394,7 +395,7 @@
                         android:hint="ex：0912345678"
                         android:layout_weight="3"
                         android:id="@+id/edt_cellphone"/>
-                </LinearLayout> &lt;!&ndash; 15. EditText &ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 15. EditText &ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -413,7 +414,7 @@
                         android:hint="ex：aaa@gmail.com"
                         android:layout_weight="3"
                         android:id="@+id/edt_email"/>
-                </LinearLayout> &lt;!&ndash; 16. EditText &ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 16. EditText &ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -426,7 +427,7 @@
                         android:textSize="25sp"
                         android:text="17. 目前是否有喝酒？："
                         />
-                </LinearLayout> &lt;!&ndash; 17. Radio Button TextView&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 17. Radio Button TextView&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -458,7 +459,7 @@
                                 android:textSize="25sp"/>
                         </RadioGroup>
                     </HorizontalScrollView>
-                </LinearLayout> &lt;!&ndash; 17. Radio Button Group&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 17. Radio Button Group&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -471,7 +472,7 @@
                         android:textSize="25sp"
                         android:text="18. 目前是否有嚼食檳榔？："
                         />
-                </LinearLayout> &lt;!&ndash; 18. Radio Button TextView&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 18. Radio Button TextView&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -503,7 +504,7 @@
                                 android:textSize="25sp"/>
                         </RadioGroup>
                     </HorizontalScrollView>
-                </LinearLayout> &lt;!&ndash; 18. Radio Button Group&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 18. Radio Button Group&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -528,9 +529,9 @@
                         android:textSize="25sp"
                         android:text="年"
                         android:layout_weight="1"/>
-                </LinearLayout> &lt;!&ndash; 19. EditText &ndash;&gt;-->
+                </LinearLayout> <!--&lt;!&ndash; 19. EditText &ndash;&gt;-->
             </LinearLayout><!-- 個案基本資料 -->
-            <!--<LinearLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -557,7 +558,7 @@
                         android:textSize="25sp"
                         android:text="1. 起床後多久抽第一支菸？："
                         />
-                </LinearLayout> &lt;!&ndash; 1. Radio Button TextView&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 1. Radio Button TextView&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -601,7 +602,7 @@
                                 android:textSize="25sp"/>
                         </RadioGroup>
                     </HorizontalScrollView>
-                </LinearLayout> &lt;!&ndash; 1. Radio Button Group&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 1. Radio Button Group&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -614,7 +615,7 @@
                         android:textSize="25sp"
                         android:text="2. 在禁菸場所不能吸菸會讓你難忍受嗎？："
                         />
-                </LinearLayout> &lt;!&ndash; 2. Radio Button TextView&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 2. Radio Button TextView&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -646,7 +647,7 @@
                                 android:textSize="25sp"/>
                         </RadioGroup>
                     </HorizontalScrollView>
-                </LinearLayout> &lt;!&ndash; 2. Radio Button Group&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 2. Radio Button Group&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -659,7 +660,7 @@
                         android:textSize="25sp"
                         android:text="3. 哪根菸是你最難放棄的？："
                         />
-                </LinearLayout> &lt;!&ndash; 3. Radio Button TextView&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 3. Radio Button TextView&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -691,7 +692,7 @@
                                 android:textSize="25sp"/>
                         </RadioGroup>
                     </HorizontalScrollView>
-                </LinearLayout> &lt;!&ndash; 3. Radio Button Group&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 3. Radio Button Group&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -704,7 +705,7 @@
                         android:textSize="25sp"
                         android:text="4. 您一天最多抽幾支菸？："
                         />
-                </LinearLayout> &lt;!&ndash; 4. Radio Button TextView&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 4. Radio Button TextView&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -748,7 +749,7 @@
                                 android:textSize="25sp"/>
                         </RadioGroup>
                     </HorizontalScrollView>
-                </LinearLayout> &lt;!&ndash; 4. Radio Button Group&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 4. Radio Button Group&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -761,7 +762,7 @@
                         android:textSize="25sp"
                         android:text="5. 起床後幾小時內是您一天中抽最多支菸的時候嗎？："
                         />
-                </LinearLayout> &lt;!&ndash; 5. Radio Button TextView&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 5. Radio Button TextView&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -793,7 +794,7 @@
                                 android:textSize="25sp"/>
                         </RadioGroup>
                     </HorizontalScrollView>
-                </LinearLayout> &lt;!&ndash; 5. Radio Button Group&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 5. Radio Button Group&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -806,7 +807,7 @@
                         android:textSize="25sp"
                         android:text="6. 當您嚴重生病時，幾乎整天臥病在床時還抽菸嗎？："
                         />
-                </LinearLayout> &lt;!&ndash; 6. Radio Button TextView&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 6. Radio Button TextView&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -838,8 +839,8 @@
                                 android:textSize="25sp"/>
                         </RadioGroup>
                     </HorizontalScrollView>
-                </LinearLayout> &lt;!&ndash; 6. Radio Button Group&ndash;&gt;
-            </LinearLayout>&lt;!&ndash; 尼古丁依賴評估 &ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 6. Radio Button Group&ndash;&gt;-->
+            </LinearLayout><!--&lt;!&ndash; 尼古丁依賴評估 &ndash;&gt;-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -867,7 +868,7 @@
                         android:textSize="25sp"
                         android:text="1. 過去一年內，有幾次戒菸超過24小時？："
                         />
-                </LinearLayout> &lt;!&ndash; 1. Radio Button TextView&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 1. Radio Button TextView&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -899,7 +900,7 @@
                                 android:textSize="25sp"/>
                         </RadioGroup>
                     </HorizontalScrollView>
-                </LinearLayout> &lt;!&ndash; 1. Radio Button Group&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 1. Radio Button Group&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -912,7 +913,7 @@
                         android:textSize="25sp"
                         android:text="2. 戒菸的原因？："
                         />
-                </LinearLayout> &lt;!&ndash; 2. Radio Button TextView&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 2. Radio Button TextView&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -956,7 +957,7 @@
                                 android:textSize="25sp"/>
                         </RadioGroup>
                     </HorizontalScrollView>
-                </LinearLayout> &lt;!&ndash; 2. Radio Button Group&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 2. Radio Button Group&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -969,7 +970,7 @@
                         android:textSize="25sp"
                         android:text="3. 戒菸的方法？："
                         />
-                </LinearLayout> &lt;!&ndash; 3. Radio Button TextView&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 3. Radio Button TextView&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1025,7 +1026,7 @@
                                 android:textSize="25sp"/>
                         </RadioGroup>
                     </HorizontalScrollView>
-                </LinearLayout> &lt;!&ndash; 3. Radio Button Group&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 3. Radio Button Group&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1038,7 +1039,7 @@
                         android:textSize="25sp"
                         android:text="4. 戒菸維持期？："
                         />
-                </LinearLayout> &lt;!&ndash; 4. Radio Button TextView&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 4. Radio Button TextView&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1094,7 +1095,7 @@
                                 android:textSize="25sp"/>
                         </RadioGroup>
                     </HorizontalScrollView>
-                </LinearLayout> &lt;!&ndash; 4. Radio Button Group&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 4. Radio Button Group&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1107,7 +1108,7 @@
                         android:textSize="25sp"
                         android:text="5. 遭遇的困難？："
                         />
-                </LinearLayout> &lt;!&ndash; 5. Radio Button TextView&ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 5. Radio Button TextView&ndash;&gt;-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1181,8 +1182,8 @@
                                 android:textSize="25sp"/>
                         </RadioGroup>
                     </HorizontalScrollView>
-                </LinearLayout> &lt;!&ndash; 5. Radio Button Group&ndash;&gt;
-            </LinearLayout>&lt;!&ndash; 過去戒菸經驗 &ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 5. Radio Button Group&ndash;&gt;-->
+            </LinearLayout><!--&lt;!&ndash; 過去戒菸經驗 &ndash;&gt;-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1209,8 +1210,8 @@
                         android:layout_height="wrap_content"
                         android:textSize="25sp"
                         />
-                </LinearLayout> &lt;!&ndash; 1. Radio Button TextView&ndash;&gt;
-            </LinearLayout>&lt;!&ndash; 目前是否合併疾病 &ndash;&gt;
+                </LinearLayout> <!--&lt;!&ndash; 1. Radio Button TextView&ndash;&gt;-->
+            </LinearLayout><!--&lt;!&ndash; 目前是否合併疾病 &ndash;&gt;-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1237,8 +1238,8 @@
                         android:layout_height="wrap_content"
                         android:textSize="25sp"
                         />
-                </LinearLayout> &lt;!&ndash; 1. Radio Button TextView&ndash;&gt;
-            </LinearLayout>&lt;!&ndash; 目前是否服用戒菸藥品 &ndash;&gt;-->
+                </LinearLayout> <!--&lt;!&ndash; 1. Radio Button TextView&ndash;&gt;-->
+            </LinearLayout><!--&lt;!&ndash; 目前是否服用戒菸藥品 &ndash;&gt;-->
 
         </LinearLayout>
     </ScrollView>

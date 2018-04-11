@@ -75,7 +75,7 @@ public class Profile extends Fragment {
             Log.e("Internal",  e.toString() );
         }
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
         //改為用暫存檔讀取資料庫
         DatabaseReference myRef = database.getReference("CaseManager/" + sb);
         myRef.addValueEventListener(new ValueEventListener() {

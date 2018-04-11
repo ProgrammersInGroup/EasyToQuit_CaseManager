@@ -1,6 +1,7 @@
 package com.easytoquit.easytoquit_casemanager.Meeting;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -30,15 +31,18 @@ public class MeetingList extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 //Toast.makeText(getActivity(), information_category[i], Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent();;
+                //Intent intent = new Intent();;
                 if (i == 0) {
-                    intent.setClass( MeetingList.this, MeetingAll.class);
+                    //intent.setClass( MeetingList.this, MeetingAll.class);
+                    Uri myBlogUri = Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSfFMor5O2VBph17IIESnymhy1SQspvXwulOWD_UvDqq0-fhhw/viewform");
+                    Intent returnIt = new Intent(Intent.ACTION_VIEW, myBlogUri);
+                    startActivity(returnIt);
                 } else if (i == 1) {
-                    intent.setClass(MeetingList.this, MeetingFirst.class);
+                    //intent.setClass(MeetingList.this, MeetingFirst.class);
                 } else {
-                    intent.setClass(MeetingList.this, MeetingSecond.class);
+                    //intent.setClass(MeetingList.this, MeetingSecond.class);
                 }
-                startActivity(intent);
+                //startActivity(intent);
             }
         });
     }

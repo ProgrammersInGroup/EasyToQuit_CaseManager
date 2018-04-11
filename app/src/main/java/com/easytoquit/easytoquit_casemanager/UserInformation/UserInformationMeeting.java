@@ -35,6 +35,8 @@ public class UserInformationMeeting extends AppCompatActivity {
                 Intent intent = new Intent();;
                 if (i == 0) {
                     intent.setClass(UserInformationMeeting.this, UserInformationMeetingAll.class);
+
+
                 } else if (i == 1) {
                     intent.setClass(UserInformationMeeting.this, UserInformationMeetingFirst.class);
                 } else {

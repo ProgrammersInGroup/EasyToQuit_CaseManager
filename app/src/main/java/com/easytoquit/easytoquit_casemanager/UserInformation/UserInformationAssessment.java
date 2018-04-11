@@ -38,7 +38,7 @@ public class UserInformationAssessment extends AppCompatActivity {
         GlobalVariable gv = (GlobalVariable)getApplicationContext();
         String userPhone = gv.getPhone();
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
         DatabaseReference myRef = database.getReference("usersAssessment/" + userPhone +"/評估資料/"+"第一次評估資料");
 
         myRef.addValueEventListener(new ValueEventListener() {

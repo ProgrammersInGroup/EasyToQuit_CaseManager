@@ -189,7 +189,7 @@
                         <RadioGroup
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-
+                            android:id="@+id/gender"
                             android:orientation="horizontal">
 
                             <RadioButton
@@ -234,7 +234,7 @@
                         <RadioGroup
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-
+                            android:id="@+id/marry"
                             android:orientation="horizontal">
 
                             <RadioButton

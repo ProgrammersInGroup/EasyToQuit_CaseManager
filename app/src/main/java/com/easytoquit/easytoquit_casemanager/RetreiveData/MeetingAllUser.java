@@ -12,10 +12,12 @@ public class MeetingAllUser {
             edt_birthday,
             edt_age,
             rbtn_outpatient,
-            rbtn_inpatient,
+            rbtn_gender,
+            rbtn_marriage;
+           /* rbtn_inpatient,
             rbtn_emergency,
             rbtn_society;
-           /* rbtn_male,
+            rbtn_male,
             rbtn_female,
             rbtn_single,
             rbtn_marriage,
@@ -92,10 +94,29 @@ public class MeetingAllUser {
     public MeetingAllUser(){
 
     }
+    /*備份
+    String name, String edt_id, String edt_birthday, String edt_age,
+    String rbtn_outpatient, String rbtn_inpatient, String rbtn_emergency,
+                          String rbtn_society, String rbtn_male, String rbtn_female, String rbtn_single,
+                          String rbtn_marriage, String rbtn_marriage_others, String rbtn_pregnant_yes,
+                          String rbtn_pregnant_no, String edt_address, String rbtn_elementary, String rbtn_junior
+                          , String rbtn_senior, String rbtn_college, String rbtn_university, String rbtn_graduate,
+                          String edt_height, String edt_weight, String edt_pressure, String edt_phone, String edt_cellphone,
+                          String edt_email, String rbtn_drink_yes, String rbtn_drink_no, String rbtn_eat_yes,
+                          String rbtn_eat_no, String edt_smoking_year, String rbtn_one_1, String rbtn_one_2,
+                          String rbtn_one_3, String rbtn_one_4, String rbtn_two_1, String rbtn_two_2, String rbtn_three_1,
+                          String rbtn_three_2, String rbtn_four_1, String rbtn_four_2, String rbtn_four_3, String rbtn_four_4,
+                          String rbtn_five_1, String rbtn_five_2, String rbtn_six_1, String rbtn_six_2, String rbtn_2_one_1,
+                          String rbtn_2_one_2, String rbtn_for_health, String rbtn_for_finance, String rbtn_for_family,
+                          String rbtn_for_others, String rbtn_3_three_1, String rbtn_3_three_2, String rbtn_3_three_3,
+                          String rbtn_3_three_4, String rbtn_3_three_5, String rbtn_3_three_6, String rbtn_3_four_1, String rbtn_3_four_2,
+                          String rbtn_3_four_3, String rbtn_3_four_4, String rbtn_3_four_5, String rbtn_3_four_6,
+                          String rbtn_3_five_1, String rbtn_3_five_2, String rbtn_3_five_3, String rbtn_3_five_4,
+                          String rbtn_3_five_5, String rbtn_3_five_6, String rbtn_3_five_7, String rbtn_3_five_8,
+                          String rbtn_3_five_9, String diveser, String medicine*/
 
     public MeetingAllUser(String name, String edt_id, String edt_birthday, String edt_age,
-                          String rbtn_outpatient, String rbtn_inpatient, String rbtn_emergency,
-                          String rbtn_society/*, String rbtn_male, String rbtn_female, String rbtn_single,
+                          String rbtn_outpatient,String rbtn_gender,String rbtn_marriage/*, String rbtn_male, String rbtn_female, String rbtn_single,
                           String rbtn_marriage, String rbtn_marriage_others, String rbtn_pregnant_yes,
                           String rbtn_pregnant_no, String edt_address, String rbtn_elementary, String rbtn_junior
                           , String rbtn_senior, String rbtn_college, String rbtn_university, String rbtn_graduate,
@@ -121,10 +142,12 @@ public class MeetingAllUser {
         this.edt_birthday=edt_birthday;
         this.edt_age=edt_age;
         this.rbtn_outpatient=rbtn_outpatient;
-        this.rbtn_inpatient=rbtn_inpatient;
+        this.rbtn_gender=rbtn_gender;
+        this.rbtn_marriage=rbtn_marriage;
+        /*this.rbtn_inpatient=rbtn_inpatient;
         this.rbtn_emergency=rbtn_emergency;
         this.rbtn_society=rbtn_society;
-        /*this.rbtn_male=rbtn_male;
+        this.rbtn_male=rbtn_male;
         this.rbtn_female=rbtn_female;
         this.rbtn_single=rbtn_single;
         this.rbtn_marriage=rbtn_marriage;
@@ -198,7 +221,6 @@ public class MeetingAllUser {
     public String getname() {
         return name;
     }
-
     public void setname(String name) {
         this.name = name;
     }
@@ -206,14 +228,13 @@ public class MeetingAllUser {
     public String getedt_id() {
         return edt_id;
     }
-
     public void setedt_id(String edt_id) {
         this.edt_id = edt_id;
     }
+
     public String getedt_birthday() {
         return edt_birthday;
     }
-
     public void setedt_birthday(String edt_birthday) {
         this.edt_birthday = edt_birthday;
     }
@@ -221,7 +242,6 @@ public class MeetingAllUser {
     public String getedt_age() {
         return edt_age;
     }
-
     public void setedt_age(String edt_age) {
         this.edt_age = edt_age;
     }
@@ -229,32 +249,45 @@ public class MeetingAllUser {
     public String getrbtn_outpatient() {
         return rbtn_outpatient;
     }
-
     public void setrbtn_outpatient(String rbtn_outpatient) {
         this.rbtn_outpatient = rbtn_outpatient;
     }
-    public String getrbtn_inpatient() {
-        return rbtn_inpatient;
+
+    public String getRbtn_gender() {
+        return rbtn_gender;
+    }
+    public void setRbtn_gender(String rbtn_gender) {
+        this.rbtn_gender = rbtn_gender;
     }
 
+    public String getRbtn_marriage() {
+        return rbtn_marriage;
+    }
+    public void setRbtn_marriage(String rbtn_marriage) {
+        this.rbtn_marriage = rbtn_marriage;
+    }
+
+    /*public String getrbtn_inpatient() {
+        return rbtn_inpatient;
+    }
     public void setrbtn_inpatient(String rbtn_inpatient) {
         this.rbtn_inpatient = rbtn_inpatient;
     }
+
     public String getrbtn_emergency() {
         return rbtn_emergency;
     }
-
     public void setrbtn_emergency(String rbtn_emergency) {
         this.rbtn_emergency = rbtn_emergency;
     }
+
     public String getrbtn_society() {
         return rbtn_society;
     }
-
-    /*public void setrbtn_society(String rbtn_society) {
+    public void setrbtn_society(String rbtn_society) {
         this.rbtn_society = rbtn_society;
     }
-    public String getrbtn_male() {
+      public String getrbtn_male() {
         return rbtn_male;
     }
 
