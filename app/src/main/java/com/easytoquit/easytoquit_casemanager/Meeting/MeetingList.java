@@ -39,8 +39,14 @@ public class MeetingList extends AppCompatActivity {
                     startActivity(returnIt);
                 } else if (i == 1) {
                     //intent.setClass(MeetingList.this, MeetingFirst.class);
+                    Uri myBlogUri = Uri.parse("https://goo.gl/forms/DE4cYxGHmj67VpJO2");
+                    Intent returnIt = new Intent(Intent.ACTION_VIEW, myBlogUri);
+                    startActivity(returnIt);
                 } else {
                     //intent.setClass(MeetingList.this, MeetingSecond.class);
+                    Uri myBlogUri = Uri.parse("https://goo.gl/forms/hYF2U31nj1U3LtcI2");
+                    Intent returnIt = new Intent(Intent.ACTION_VIEW, myBlogUri);
+                    startActivity(returnIt);
                 }
                 //startActivity(intent);
             }
