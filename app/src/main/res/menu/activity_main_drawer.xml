@@ -28,10 +28,10 @@
             android:id="@+id/nav_information"
             android:icon="@drawable/information"
             android:title="衛教資訊" />
-        <item
-            android:id="@+id/nav_tips"
-            android:icon="@drawable/tips"
-            android:title="戒菸撇步" />
+        <!--<item-->
+            <!--android:id="@+id/nav_tips"-->
+            <!--android:icon="@drawable/tips"-->
+            <!--android:title="戒菸撇步" />-->
         <!--<item
             android:id="@+id/nav_history"
             android:icon="@drawable/history"

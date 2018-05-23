@@ -29,7 +29,6 @@ import com.easytoquit.easytoquit_casemanager.mFragment.Health_Stop;
 import com.easytoquit.easytoquit_casemanager.mFragment.Information;
 import com.easytoquit.easytoquit_casemanager.mFragment.Profile;
 import com.easytoquit.easytoquit_casemanager.mFragment.Status;
-import com.easytoquit.easytoquit_casemanager.mFragment.Tips;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -244,11 +243,11 @@ public class MainActivity extends AppCompatActivity
                         .replace(R.id.content_frame, new Information())
                         .commit();
                 break;
-            case R.id.nav_tips:
-                fragmentManager.beginTransaction()
-                        .replace(R.id.content_frame, new Tips())
-                        .commit();
-                break;
+//            case R.id.nav_tips:
+//                fragmentManager.beginTransaction()
+//                        .replace(R.id.content_frame, new Tips())
+//                        .commit();
+//                break;
             /*case R.id.nav_history:
                 fragmentManager.beginTransaction()
                         .replace(R.id.content_frame, new History())
