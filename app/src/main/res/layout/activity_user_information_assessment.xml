@@ -56,47 +56,47 @@
 
             </LinearLayout> <!-- 菸齡 -->
 
-            <LinearLayout
-                android:id="@+id/linearLayout1"
-                android:layout_width="match_parent"
-                android:layout_height="100sp"
-                android:layout_margin="10sp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/border"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteX="10dp"
-                android:layout_gravity="center">
+            <!--<LinearLayout-->
+                <!--android:id="@+id/linearLayout1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100sp"-->
+                <!--android:layout_margin="10sp"-->
+                <!--android:layout_marginTop="16dp"-->
+                <!--android:background="@drawable/border"-->
+                <!--app:layout_constraintTop_toTopOf="parent"-->
+                <!--tools:layout_editor_absoluteX="10dp"-->
+                <!--android:layout_gravity="center">-->
 
-                <TextView
-                    android:id="@+id/txt_week_smoking"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15sp"
-                    android:text="這一週內平均每天吸"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"/>
+                <!--<TextView-->
+                    <!--android:id="@+id/txt_week_smoking"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="15sp"-->
+                    <!--android:text="這一週內平均每天吸"-->
+                    <!--android:textColor="@color/colorPrimary"-->
+                    <!--android:textSize="25sp"-->
+                    <!--android:layout_gravity="center"/>-->
 
-                <TextView
-                    android:id="@+id/show_week_smoking"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10sp"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"
-                    />
+                <!--<TextView-->
+                    <!--android:id="@+id/show_week_smoking"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10sp"-->
+                    <!--android:textColor="@color/colorPrimary"-->
+                    <!--android:textSize="25sp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--/>-->
 
-                <TextView
-                    android:id="@+id/unit_week_smoking"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5sp"
-                    android:text="支"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"/>
-            </LinearLayout> <!-- 一週吸菸量 -->
+                <!--<TextView-->
+                    <!--android:id="@+id/unit_week_smoking"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="5sp"-->
+                    <!--android:text="支"-->
+                    <!--android:textColor="@color/colorPrimary"-->
+                    <!--android:textSize="25sp"-->
+                    <!--android:layout_gravity="center"/>-->
+            <!--</LinearLayout> &lt;!&ndash; 一週吸菸量 &ndash;&gt;-->
 
             <LinearLayout
                 android:id="@+id/linearLayout2"

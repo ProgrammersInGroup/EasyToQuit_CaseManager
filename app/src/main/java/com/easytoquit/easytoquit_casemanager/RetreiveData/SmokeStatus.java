@@ -31,12 +31,12 @@ public class SmokeStatus {
     public void setsmokehowmuchday(String smokehowmuchday) {
         this.smokehowmuchday = smokehowmuchday;
     }
-    public String getsmokehowmuchweek() {
-        return smokehowmuchweek;
-    }
-    public void setsmokehowmuchweek(String smokehowmuchweek) {
-        this.smokehowmuchweek = smokehowmuchweek;
-    }
+//    public String getsmokehowmuchweek() {
+//        return smokehowmuchweek;
+//    }
+//    public void setsmokehowmuchweek(String smokehowmuchweek) {
+//        this.smokehowmuchweek = smokehowmuchweek;
+//    }
     public String getsmokequitday() {
         return smokequitday;
     }

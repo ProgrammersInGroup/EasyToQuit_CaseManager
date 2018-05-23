@@ -30,7 +30,7 @@ public class UserInformationAssessment extends AppCompatActivity {
 
         final String TAG="Status";
         show_smoking_year = (TextView)findViewById(R.id.show_smoking_year) ;
-        show_week_smoking = (TextView)findViewById(R.id.show_week_smoking) ;
+//        show_week_smoking = (TextView)findViewById(R.id.show_week_smoking) ;
         show_date_smoking = (TextView)findViewById(R.id.show_date_smoking) ;
         show_quit_smoking_date = (TextView)findViewById(R.id.show_quit_smoking_date) ;
         show_smoking_money = (TextView)findViewById(R.id.show_smoking_money) ;
@@ -50,7 +50,7 @@ public class UserInformationAssessment extends AppCompatActivity {
                 Log.d(TAG, "Value is: " + user);*/
                 SmokeStatus value = dataSnapshot.getValue(SmokeStatus.class);
                 show_smoking_year.setText(value.getsmokeage());
-                show_week_smoking.setText(value.getsmokehowmuchweek());
+//                show_week_smoking.setText(value.getsmokehowmuchweek());
                 show_date_smoking.setText(value.getsmokehowmuchday());
                 show_quit_smoking_date.setText(value.getsmokequitday());
                 show_smoking_money.setText(value.getsmokemoney());
